@@ -1,0 +1,23 @@
+.reg_container{  margin: auto;
+    height:800px;
+    width: 500px;
+    text-align: center;
+    background-color:powderblue;
+    color:white;
+    border:orange;
+    border-radius: 20px;
+    border-width:5px;
+    border-style:solid;}
+.card{
+    border: olivedrab;
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 25px;
+}
+input,textarea,select
+{
+        border: olivedrab;
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 25px;
+}
