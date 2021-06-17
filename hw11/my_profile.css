@@ -1,0 +1,146 @@
+.column {
+  float: left;
+
+}
+.profile_image{
+  width:50%;
+  margin-inside:100%;
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.box {
+  display: flex;
+
+  color:white;
+  margin-left: 20%;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
+.fa {
+  padding: 0.5rem;
+  font-size: 2rem;
+  width: 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5rem 0.2rem;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-twitter {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-google {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-linkedin {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-youtube {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-instagram {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-pinterest {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: mediumblue;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-android {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-dribbble {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-vimeo {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-tumblr {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-vine {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-foursquare {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-flickr {
+  background:mediumblue;
+  color: white;
+}
+
+.fa-yahoo {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-reddit {
+  background: mediumblue;
+  color: white;
+}
+
+.fa-rss {
+  background: mediumblue;
+  color: white;
+}

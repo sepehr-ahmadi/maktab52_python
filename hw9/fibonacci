@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Static input fo N
+echo "please enter series length"
+read varname
+
+N=$varname
+
+a=0
+b=1
+
+echo "The Fibonacci series is : ">> file.txt
+
+for (( i=0; i<N; i++ ))
+do
+	echo -n "$a " >> file.txt
+	fn=$((a + b))
+	a=$b
+	b=$fn
+done

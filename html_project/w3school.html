@@ -1,10 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Title</title>
 </head>
+<style>
+
+    body {
+        background-image: url("https://www.w3schools.com/w3images/onepage_restaurant.jpg");
+        background-color: #cccccc;
+    }</style>
 <body>
-$END$
+
+<div class="container">
+    <div class="row">
+        <button class="btn btn-info btn-lg" data-target="#menuModal" data-toggle="modal" type="button">menu</button>
+
+    </div>
+    <div class="row">
+        <button class="btn btn-info btn-lg" data-target="#contactModal" data-toggle="modal" type="button">contact
+        </button>
+    </div>
+    <div class="row" style="height:500px">
+        <h1 style="text-align:center; color:white;padding-top: 240px">logo</h1>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="menuModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
+                <h4 class="modal-title" style="background-color:black">Starter</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-header">
+                <h4 class="modal-title">Main course</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+            </div>
+
+            <div class="modal-header">
+                <h4 class="modal-title">dessert</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+                <p>Some text in the modal.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="contactModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">&times;</button>
+                <h4 class="modal-title">Contact</h4>
+            </div>
+            <div class="modal-body">
+                <p>Reserve a table, ask for today's special or just send us a message:</p>
+            </div>
+            <form action="/action_page.php" class="was-validated">
+                <div class="form">
+                    <label for="uname">Username:</label>
+                    <input class="form-control" id="uname" name="uname" placeholder="Enter username" required
+                           type="text">
+                </div>
+                <div class="incremental-input" id="counter-input">
+                    <input aria-label="Amount (to the nearest dollar)" class="form-control" type="text" value="1">
+                </div>
+                <div>
+                    <button class="btn btn-primary" type="submit"> SEND MESSAGE</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+        </div>
+    </div>
+
+</div>
+</div>
+
 </body>
 </html>
