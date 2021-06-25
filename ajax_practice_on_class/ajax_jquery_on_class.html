@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+<body >
+<div id="new_div" >
+    <p id="new">
+salam
+</p>
+</div>
+
+<script>
+$.ajax({url:"http://ma-web.ir/maktab52/users.json",success:function (response,status,xhr){
+const text=xhr.responseText;
+
+const jsonuser = JSON.parse(text);
+let tex=""
+for (let x of jsonuser) {
+   tex += "<a href='#' class='list-group-item' style='width: 25%;' name='"+x.firstname+"'>"+x.firstname + "</a>";
+}
+
+document.getElementById("new_div").innerHTML= tex;
+
+}})
+
+$(document).ready(function() {
+  $(".list-group-item").click('click', function(){
+      console.log("12")
+    $('.active').removeClass('active');
+    $(this).addClass('active');
+    console.log($(this));
+    // Code here whatever you want or you can call other function here
+  });
+});
+</script>
+</body>
+</html>

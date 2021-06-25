@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="new_div">
+    <p id="new">
+salam
+</p>
+</div>
+
+<script>
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status ==200) {
+
+const jsonuser = JSON.parse(this.responseText);
+console.log(jsonuser);
+document.getElementById("new_div").innerHTML= (jsonuser[0].firstname);
+
+
+
+};
+};
+xhttp.open("GET", "http://ma-web.ir/maktab52/users.json", true);
+xhttp.send();
+</script>
+</body>
+</html>
