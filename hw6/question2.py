@@ -1,5 +1,5 @@
 def string_calculation():
-    input_string = input('please write your equation')
+    input_string = input('please write your equation: ')
     print(eval(input_string))
 try:
     string_calculation()

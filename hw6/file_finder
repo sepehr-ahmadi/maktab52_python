@@ -1,0 +1,8 @@
+#!/bin/bash
+echo please enter file name
+read FILE
+if test -f "$FILE"; then
+    tail -10 $FILE
+else
+  echo "$FILE dose not exists."
+fi

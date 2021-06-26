@@ -1,4 +1,4 @@
-from .models import Car, Peugeot
+from models import Car, Peugeot
 
 
 class CarView:
