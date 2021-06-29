@@ -3,7 +3,7 @@ from psycopg2.extensions import  ISOLATION_LEVEL_AUTOCOMMIT
 import sys
 import io
 con_remote = psycopg2.connect(host="185.239.106.39", port=5432, user="test", password="12345",database="lab")
-con_local=psycopg2.connect(host="localhost", port="5432",user="postgres",password="masiandsepehr7368")
+con_local=psycopg2.connect(host="localhost", port="5432",user="postgres",password="password")
 con_local.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT);
 con_remote.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT);
 cur_remote = con_remote.cursor()
