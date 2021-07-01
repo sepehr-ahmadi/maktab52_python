@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>
+        MyArt
+    </title>
+    <style>
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem
+        }
+
+        h3 {
+            font-size: 1rem
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div> my art about</div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <img class="img-responsive" onclick="big_image(this.src,1)"
+                         src="https://github.com/mohammadT77/Maktab52_quiz2/blob/main/images/img2.jpg?raw=true">
+                </div>
+                <div class="row">
+                    <img class="img-responsive" onclick="big_image(this.src,2)"
+                         src="https://github.com/mohammadT77/Maktab52_quiz2/blob/main/images/img3.jpg?raw=true">
+
+                </div>
+                <div class="row">
+                    <img class="img-responsive" onclick="big_image(this.src,3)"
+                         src="https://github.com/mohammadT77/Maktab52_quiz2/blob/main/images/img6.jpg?raw=true">
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="container">
+                    <div class="row" style="height: 100%">
+                        <img class="img-responsive" onclick="big_image(this.src,4)"
+                             src="https://github.com/mohammadT77/Maktab52_quiz2/blob/main/images/img4.jpg?raw=true">
+                    </div>
+                    <div class="row" style="height:120%">
+                        <img class="img-responsive" style="height: 100%" onclick="big_image(this.src,5)"
+                             src="https://github.com/mohammadT77/Maktab52_quiz2/blob/main/images/img5.jpg?raw=true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+        <br>
+        <h1 style="text-align: center">About</h1>
+        <br>
+        <br>
+            <div class="text-center">
+
+        <img class="rounded"
+             src="https://github.com/mohammadT77/Maktab52_quiz2/blob/main/images/img1.jpg?raw=true">
+            </div>
+            <div id="form" class="text-center" style="width: 30% ;margin: 0 auto;">
+                <form>
+  <div class="form-group ">
+    <label >Name</label>
+    <input type="Name" class="form-control" id="name"  placeholder="Enter your name">
+  </div>
+  <div class="form-group" >
+    <label >email</label>
+    <input type="email" class="form-control" id="email" placeholder="email">
+  </div>
+                    <div class="form-group">
+    <label >message</label>
+    <input type="text" class="form-control" id="message" placeholder="message">
+  </div>
+
+  <button type="submit" class="btn btn-primary">send</button>
+</form>
+            </div>
+
+
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
